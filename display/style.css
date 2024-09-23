@@ -1,0 +1,23 @@
+p{
+    display: block;
+}
+body{min-height: 100vh;}
+.gras{
+    font-weight: bold;
+    background-color: cadetblue;
+    height: 20%;
+}
+.rouge{background-color: red;
+display: inline-block;
+height: 3em;}
+.petitcarre{
+    display: inline-block;
+    background-color: blueviolet;
+    height: 5em;
+    width: 5em;    
+margin: auto;
+}
+.container{ 
+width: 100%;
+text-align: center;
+}
