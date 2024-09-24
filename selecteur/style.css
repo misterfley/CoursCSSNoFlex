@@ -1,0 +1,32 @@
+input {
+    border: 1px solid black;
+}
+.bleu{
+    background-color: blue;
+}
+#super-titre{
+    font-size: 2em;
+    text-decoration: underline;
+}
+*{
+    box-sizing: border-box;
+}
+div+p{
+    color: fuchsia;
+}
+p~span{
+    color: cornflowerblue;
+}
+div>p{
+    color: green;
+}
+div p{
+    color: orange;
+}
+h2:hover{
+    color: red;
+}
+li:first-child{
+   
+    font-style: oblique;
+}

@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Super-Squad";
+  src: url(./fonts/Super\ Squad.ttf);
+}
+@font-face {
+  font-family: "LilitaOne";
+  src: url(./fonts/LilitaOne-Regular.ttf);
+}
+h1 {
+  color: red;
+  text-shadow: black 1px 0 10px;
+}
+h1,
+h2 {
+  text-align: center;
+}
+.super-squad {
+  font-family: "super-squad", Arial, Helvetica, sans-serif;
+}
+.lilita-one {
+  font-family: "LilitaOne", Arial, Helvetica, sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+/* pour viser les img du container */
+.container img {
+  margin-bottom: 1em;
+}
+
+/* LES BREAKPOINTS
+Ils permettent le changement de comportement
+ de la page web par rapport à la taille
+ de l'écran
+ 
+ Breakpoint small >= 576px
+ Breakpoint medium  >= 768px
+ breakpoint large |= 992px
+ 
+ Les exemples particuliers
+
+ breakpoint very-small < 576px
+ breakpoint extra-large>= 1400px
+ breakpoint extra extra-large>=  1400px
+ */
+
+ /* On change les propriétés 
+ quand l'écran est inférieur à 768px */
+
+@media screen  and (max-width : 768px){
+  p{
+    text-align: center;
+    color: red;
+  text-shadow: black 1px  1px;
+  }  
+  .chien{
+    order: 2;
+  }
+  .chat{
+    order: 1;
+  }
+}
+/* Pour les orientations en mode 
+paysage
+cela n'a rien à voir avec le matériel utilisé
+(smartphone, tablette, pc) */
+@media (orientation: landscape){
+
+}
+/*Pour les orientations en mode  portrait  */
+@media (orientation: portrait){
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+p{
+    color: red;
+}
+}
+  
+
