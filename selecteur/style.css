@@ -30,3 +30,47 @@ li:first-child{
    
     font-style: oblique;
 }
+
+/* Cible les éléments en fonction de leur position dans le document
+Dans cet exemple, le 4eme, le 8eme, le 12eme, le 16eme, le 20eme etc */
+/*  */
+
+/* Permet de cibler le 3eme élément enfant du body */
+
+/* dans cet exemple les éléments enfants (1,3,5,7 etc) */
+
+/* body :nth-child(2n+1) {
+    background-color: rgb(243, 243, 231);
+} */
+
+/*Dans cet exemple, les enfants 4 7 10 13 etc
+ Dans cet exemple on prend la valeur initiale4 et on saute de 3 en 3 */
+
+/* body :nth-child(3n+4) {
+    background-color: rgb(221, 221, 206);
+} */
+.alinea::first-letter{
+    font-size: 3em;
+    color: red;
+}
+.center{
+    text-align: center;
+}
+.like{
+    text-decoration: none;
+    color: chocolate;
+    margin: 3em 1em;
+    margin-bottom: 3em;
+    background-color: rgb(155, 198, 223);
+    padding:0.7em 3em;
+    border-radius: 15px; 
+}
+.like::after{
+content: "💝";
+}
+.like::before{
+      content: "😸";
+}
+.lorem{
+    margin-bottom: 3em;
+}
