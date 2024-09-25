@@ -1,0 +1,25 @@
+/* La div absolue sort du flux des autres éléments
+Ici elle se place en haut à la position 0 et se met au milieu de l'ecran (à cause des 50%) */
+.absolue {
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    position: absolute;
+    /* Ici pour bien centrer notre carré, on décale son centre par la moitié de sa largeur */
+    left: calc(50% - 100px);
+    top: 0%;
+    text-align: center;
+}
+.parent{
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(231, 191, 14);
+}
+.relative{
+    width: 4vh;
+    height: 4vh;
+    background-color: red;
+    position: relative;
+    left: 17%;
+    top: 40%;
+}

@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+nav {
+    background-color: #333;
+    height: 10%;
+}
+
+ul li {
+    color: white;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+}
+
+.galerie {
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.carte {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+    position: relative;
+}
+
+/* ici on cible les élément avec la classe carte et spécial */
+
+.carte.special::before {
+    content: "Special";
+    position: absolute;
+    top:10px;
+    left: 10px;
+    background-color: #ff5722;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.carte::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #3f51b5;
+}
+
+.carte + .carte {
+    border-color: #ff9800;
+}
